@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+  <link rel="stylesheet" href="./normalize-fwd.css">
+  <link rel="stylesheet" href="style.css">
+
+
+  <title>(Rishabh)Frontend Mentor | IP Address Tracker</title>
+</head>
+
+<body>
+  <main>
+    <div class="top-area">
+      <h1 class="title">
+        IP Address Tracker
+      </h1>
+      <form>
+        <input type="search" class="search-bar" placeholder="  Search for any IP address or domain">
+        <button type="submit" class="submit"><img src="./images/icon-arrow.svg" alt="icon-arrow"
+            class="icon-arrow" /></button>
+      </form>
+      <div class="info-container">
+        <div class="ip">
+          <span class="info-title"> IP Address</span>
+          <br /><span class="ip-address">129.23423.424</span>
+        </div>
+        <div class="locate">
+          <span class="info-title"> Location </span>
+          <br /><span class="location">Phillaur, PB 14410</span>
+        </div>
+        <div class="time">
+          <span class="info-title"> Timezone </span>
+          <br /><span class="time-zone">129.23423.424</span>
+        </div>
+        <div class="is">
+          <span class="info-title"> ISP </span>
+          <br /><span class="isp">129.23423.424</span>
+        </div>
+      </div>
+
+    </div>
+    <div id="map"></div>
+
+  </main>
+
+
+  <!-- IP Address
+  Location
+  Timezone
+    UTC add offset value dynamically using the API -->
+  <!-- ISP -->
+  <script src="./script.js"></script>
+</body>
+
+</html>

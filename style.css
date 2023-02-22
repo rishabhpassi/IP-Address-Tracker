@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+*:focus {
+    outline: none;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+
+}
+
+.top-area{
+    background-image:url('./images/pattern-bg.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-attachment: cover;
+    position: relative;
+    height: 16rem;
+    z-index: 1000;
+
+}
+.title{
+    color: white;
+    font-weight: 400;
+    margin-top: -5rem;
+}
+input[type="search"]{
+    width: 25rem;
+    height: 3rem;
+    border-radius: 15px;
+    border: none;
+    padding: 1rem;
+    
+}
+form{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+button[type="submit"]{
+    background-color: black;
+    height: 3rem;
+    width: 3rem;
+    border-radius:0px 10px 10px 0px ;
+    border: none;
+    position: absolute;
+    right: 0%;
+    cursor: pointer;
+
+}
+
+button[type="submit"]:hover{
+    background-color: hsl(0, 0%, 17%);
+}
+
+
+.info-container{
+    display: flex;
+    position: absolute;
+    height: 10rem;
+    top: 12rem;
+    width: 60rem;
+    background-color: white;
+    overflow: hidden;
+    padding: 1rem;
+    gap: 3rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+
+.info-title{
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 1rem;
+    font-size: small;
+    text-transform: uppercase;
+
+}
+.ip,.locate,.time{
+    border-right: 1px solid hsl(0, 0%, 59%);
+    padding-right: 1rem;
+    line-height: 30px;
+
+
+
+}
+.is{
+    line-height: 30px;
+    margin-right: 2rem;
+}
+.ip-address,.location,.time-zone,.isp{
+    font-weight:500;
+    font-size: 1.1rem;
+    width: 1rem;
+    overflow: hidden;
+    height: 2rem;
+
+}
+
+#map { 
+    height: 65vh;
+
+    
+ }
+ .leaflet-control-container{
+     display: none;
+ }
+ .icon-location {
+    filter: drop-shadow(0 0 6px rgba(0,0,0,0.4));
+}
+
+@media (max-width: 768px){
+    .info-container{
+        display: block;
+        width: auto;
+        height: fit-content;
+    }
+    .ip, .locate, .time{
+        border: 0;
+    }
+   
+
+
+
+
+}
